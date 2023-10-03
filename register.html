@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup</title>
+</head>
+<style>
+body{
+  background-color:cadetblue;
+}
+.background{
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  border-radius: 20px;
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+button{
+    margin-top: 10px;
+    width: 40%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+button:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+
+</style>
+<body>
+  <center>
+    <div class="background">
+    <h1 style="color: white;">Signup</h1>
+    <form action="/register" method="post">
+      <input type="text" name="firstname" placeholder="First Name" style="height: 30px; width: 250px;" required><br><br>
+      <input type="text" name="lastname" placeholder="Last Name" style="height: 30px; width: 250px;" required><br><br>
+      <input type="text" name="username" placeholder="Username" style="height: 30px; width: 250px;" required><br><br>
+      <input type="password" name="password" placeholder="Password" style="height: 30px; width: 250px;" required><br><br>
+      <!-- <button type="submit" style="height: 30px; width: 80px;">Signup</button> -->
+      <button type="submit">Signup</button>
+    </form>
+  </div>
+  </center>
+</body>
+</html>
